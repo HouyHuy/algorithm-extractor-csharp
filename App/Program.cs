@@ -27,13 +27,21 @@ internal class Program
         }
 
         Console.WriteLine("=== GRAPH PARSER (C# EDITION) ===");
-        Console.WriteLine("Nhập một dòng đề bài và nhấn Enter để chạy.");
+        Console.WriteLine("Nhập nhiều dòng đề bài (kết thúc bằng dòng trống).");
 
         Console.Write("\n>> ");
-        var lineInput = Console.ReadLine();
-        if (string.IsNullOrWhiteSpace(lineInput)) return;
+        var sb = new StringBuilder();
+        while (true)
+        {
+            var line = Console.ReadLine();
+            if (line == null) break;
+            if (string.IsNullOrWhiteSpace(line)) break;
+            sb.AppendLine(line);
+        }
+        var input = sb.ToString();
+        if (string.IsNullOrWhiteSpace(input)) return;
 
-        ProcessAndExtract(lineInput);
+        ProcessAndExtract(input);
     }
 
     static void ProcessAndExtract(string input)

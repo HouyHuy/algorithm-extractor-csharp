@@ -1,0 +1,525 @@
+# Bộ câu hỏi Lý thuyết Đồ thị
+
+## 1. Duyệt đồ thị (Graph Traversal)
+
+### Câu 1.1 - BFS trên đồ thị vô hướng
+Cho đồ thị vô hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D, E, F} và các cạnh E = {(A,B), (A,C), (B,D), (C,D), (C,E), (D,F), (E,F)}. Hãy duyệt đồ thị bằng thuật toán BFS xuất phát từ đỉnh A.
+
+**Metadata:** 
+- algorithm: bfs
+- task: graph_traversal
+
+### Câu 1.2 - DFS trên đồ thị vô hướng
+Cho đồ thị vô hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {1, 2, 3, 4, 5, 6} và các cạnh E = {(1,2), (1,3), (2,4), (3,4), (3,5), (4,6), (5,6)}. Hãy duyệt đồ thị bằng thuật toán DFS xuất phát từ đỉnh 1.
+
+**Metadata:** 
+- algorithm: dfs
+- task: graph_traversal
+
+### Câu 1.3 - BFS trên đồ thị có hướng
+Cho đồ thị có hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D, E} và các cạnh E = {(A,B), (A,C), (B,D), (C,B), (C,E), (D,E)}. Hãy duyệt đồ thị bằng thuật toán BFS xuất phát từ đỉnh A.
+
+**Metadata:** 
+- algorithm: bfs
+- task: graph_traversal
+
+### Câu 1.4 - DFS trên đồ thị có hướng
+Cho đồ thị có hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {1, 2, 3, 4, 5} và các cạnh E = {(1,2), (1,3), (2,4), (3,2), (3,5), (4,5)}. Hãy duyệt đồ thị bằng thuật toán DFS xuất phát từ đỉnh 1.
+
+**Metadata:** 
+- algorithm: dfs
+- task: graph_traversal
+
+---
+
+## 2. Chu trình Euler
+
+### Câu 2.1 - Chu trình Euler trên đồ thị vô hướng
+Cho đồ thị vô hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D} và các cạnh E = {(A,B), (B,C), (C,D), (D,A), (A,C)}. Hãy tìm chu trình Euler của đồ thị (nếu có).
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_cycle
+
+### Câu 2.2 - Đường đi Euler trên đồ thị vô hướng
+Cho đồ thị vô hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {1, 2, 3, 4, 5} và các cạnh E = {(1,2), (2,3), (3,4), (4,5), (5,1), (1,3)}. Hãy tìm đường đi Euler của đồ thị (nếu có).
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_path
+
+### Câu 2.3 - Chu trình Euler trên đồ thị có hướng
+Cho đồ thị có hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D} và các cạnh E = {(A,B), (B,C), (C,D), (D,A), (A,C), (C,A)}. Hãy tìm chu trình Euler của đồ thị (nếu có).
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_cycle
+
+---
+
+## 3. Đường đi Hamilton
+
+### Câu 3.1 - Đường đi Hamilton
+Cho đồ thị vô hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D, E} và các cạnh E = {(A,B), (A,E), (B,C), (B,E), (C,D), (C,E), (D,E)}. Hãy tìm đường đi Hamilton của đồ thị (nếu có).
+
+**Metadata:** 
+- algorithm: hamilton
+- task: hamilton_path
+
+### Câu 3.2 - Đường đi Hamilton phức tạp
+Cho đồ thị vô hướng, không trọng số, liên thông G(V, E) có tập đỉnh V = {1, 2, 3, 4, 5, 6} và các cạnh E = {(1,2), (1,6), (2,3), (2,6), (3,4), (3,5), (4,5), (5,6)}. Hãy tìm đường đi Hamilton của đồ thị (nếu có).
+
+**Metadata:** 
+- algorithm: hamilton
+- task: hamilton_path
+
+---
+
+## 4. Đường đi ngắn nhất
+
+### Câu 4.1 - Dijkstra trên đồ thị vô hướng
+Cho đồ thị vô hướng, có trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D, E} và các cạnh E = {(A,B,4), (A,C,2), (B,C,1), (B,D,5), (C,D,8), (C,E,10), (D,E,2)}. Hãy tìm đường đi ngắn nhất từ đỉnh A đến các đỉnh còn lại bằng thuật toán Dijkstra.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+### Câu 4.2 - Dijkstra trên đồ thị có hướng
+Cho đồ thị có hướng, có trọng số, liên thông G(V, E) có tập đỉnh V = {1, 2, 3, 4, 5} và các cạnh E = {(1,2,3), (1,3,8), (2,3,2), (2,4,1), (3,5,3), (4,5,2)}. Hãy tìm đường đi ngắn nhất từ đỉnh 1 đến các đỉnh còn lại bằng thuật toán Dijkstra.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+### Câu 4.3 - Bellman-Ford với trọng số âm
+Cho đồ thị có hướng, có trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D, E} và các cạnh E = {(A,B,6), (A,C,7), (B,C,-3), (B,D,8), (C,D,2), (D,E,-2), (E,B,4)}. Hãy tìm đường đi ngắn nhất từ đỉnh A đến các đỉnh còn lại bằng thuật toán Bellman-Ford.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+### Câu 4.4 - Bellman-Ford trên đồ thị vô hướng
+Cho đồ thị vô hướng, có trọng số, liên thông G(V, E) có tập đỉnh V = {1, 2, 3, 4, 5, 6} và các cạnh E = {(1,2,7), (1,3,9), (2,3,10), (2,4,15), (3,4,11), (3,6,2), (4,5,6), (5,6,9)}. Hãy tìm đường đi ngắn nhất từ đỉnh 1 đến các đỉnh còn lại bằng thuật toán Bellman-Ford.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+---
+
+## 5. Cây khung tối tiểu
+
+### Câu 5.1 - Prim
+Cho đồ thị vô hướng, có trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D, E, F} và các cạnh E = {(A,B,2), (A,C,3), (B,C,1), (B,D,4), (C,D,5), (C,E,6), (D,E,7), (D,F,8), (E,F,9)}. Hãy tìm cây khung tối tiểu của đồ thị bằng thuật toán Prim.
+
+**Metadata:** 
+- algorithm: prim
+- task: minimum_spanning_tree
+
+### Câu 5.2 - Kruskal
+Cho đồ thị vô hướng, có trọng số, liên thông G(V, E) có tập đỉnh V = {1, 2, 3, 4, 5, 6} và các cạnh E = {(1,2,5), (1,3,10), (2,3,6), (2,4,7), (3,4,8), (3,5,9), (4,5,11), (4,6,12), (5,6,13)}. Hãy tìm cây khung tối tiểu của đồ thị bằng thuật toán Kruskal.
+
+**Metadata:** 
+- algorithm: kruskal
+- task: minimum_spanning_tree
+
+### Câu 5.3 - Prim với đồ thị lớn hơn
+Cho đồ thị vô hướng, có trọng số, liên thông G(V, E) có tập đỉnh V = {A, B, C, D, E, F, G} và các cạnh E = {(A,B,7), (A,D,5), (B,C,8), (B,D,9), (B,E,7), (C,E,5), (D,E,15), (D,F,6), (E,F,8), (E,G,9), (F,G,11)}. Hãy tìm cây khung tối tiểu của đồ thị bằng thuật toán Prim xuất phát từ đỉnh A.
+
+**Metadata:** 
+- algorithm: prim
+- task: minimum_spanning_tree
+
+### Câu 5.4 - Kruskal với đồ thị phức tạp
+Cho đồ thị vô hướng, có trọng số, liên thông G(V, E) có tập đỉnh V = {1, 2, 3, 4, 5, 6, 7, 8} và các cạnh E = {(1,2,3), (1,3,4), (2,3,5), (2,4,6), (3,4,7), (3,5,8), (4,5,9), (4,6,10), (5,6,11), (5,7,12), (6,7,13), (6,8,14), (7,8,15)}. Hãy tìm cây khung tối tiểu của đồ thị bằng thuật toán Kruskal.
+
+**Metadata:** 
+- algorithm: kruskal
+- task: minimum_spanning_tree
+
+---
+# Bộ câu hỏi Lý thuyết Đồ thị
+
+## 1. Duyệt đồ thị (Graph Traversal)
+
+### Câu 1.1 - BFS trên đồ thị vô hướng
+Cho một đồ thị vô hướng không có trọng số với 6 đỉnh là A, B, C, D, E, F. Các cạnh của đồ thị bao gồm: A nối với B, A nối với C, B nối với D, C nối với D, C nối với E, D nối với F, E nối với F. Hãy duyệt đồ thị này bắt đầu từ đỉnh A.
+
+**Metadata:** 
+- algorithm: bfs
+- task: graph_traversal
+
+### Câu 1.2 - DFS trên đồ thị vô hướng
+Cho một đồ thị vô hướng không có trọng số với 6 đỉnh là 1, 2, 3, 4, 5, 6. Các cạnh của đồ thị gồm: đỉnh 1 nối với đỉnh 2, đỉnh 1 nối với đỉnh 3, đỉnh 2 nối với đỉnh 4, đỉnh 3 nối với đỉnh 4, đỉnh 3 nối với đỉnh 5, đỉnh 4 nối với đỉnh 6, đỉnh 5 nối với đỉnh 6. Hãy duyệt đồ thị này xuất phát từ đỉnh 1.
+
+**Metadata:** 
+- algorithm: dfs
+- task: graph_traversal
+
+### Câu 1.3 - BFS trên đồ thị có hướng
+Cho một đồ thị có hướng không có trọng số với 5 đỉnh A, B, C, D, E. Các cạnh có hướng của đồ thị là: từ A đến B, từ A đến C, từ B đến D, từ C đến B, từ C đến E, từ D đến E. Hãy duyệt đồ thị này bắt đầu từ đỉnh A.
+
+**Metadata:** 
+- algorithm: bfs
+- task: graph_traversal
+
+### Câu 1.4 - DFS trên đồ thị có hướng
+Cho một đồ thị có hướng không có trọng số với các đỉnh 1, 2, 3, 4, 5. Đồ thị có các cạnh có hướng sau: từ đỉnh 1 đến đỉnh 2, từ đỉnh 1 đến đỉnh 3, từ đỉnh 2 đến đỉnh 4, từ đỉnh 3 đến đỉnh 2, từ đỉnh 3 đến đỉnh 5, từ đỉnh 4 đến đỉnh 5. Hãy duyệt đồ thị này bắt đầu từ đỉnh 1.
+
+**Metadata:** 
+- algorithm: dfs
+- task: graph_traversal
+
+---
+
+## 2. Chu trình Euler
+
+### Câu 2.1 - Chu trình Euler trên đồ thị vô hướng
+Cho một đồ thị vô hướng với các đỉnh A, B, C, D. Đồ thị có các cạnh nối: A với B, B với C, C với D, D với A, A với C. Hãy tìm chu trình đi qua tất cả các cạnh đúng một lần và quay lại đỉnh xuất phát.
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_cycle
+
+### Câu 2.2 - Đường đi Euler trên đồ thị vô hướng
+Cho một đồ thị vô hướng có 5 đỉnh là 1, 2, 3, 4, 5. Các cạnh của đồ thị gồm: đỉnh 1 nối đỉnh 2, đỉnh 2 nối đỉnh 3, đỉnh 3 nối đỉnh 4, đỉnh 4 nối đỉnh 5, đỉnh 5 nối đỉnh 1, đỉnh 1 nối đỉnh 3. Hãy tìm đường đi qua tất cả các cạnh đúng một lần.
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_path
+
+### Câu 2.3 - Chu trình Euler trên đồ thị có hướng
+Cho một đồ thị có hướng với các đỉnh A, B, C, D. Đồ thị có các cạnh có hướng: từ A đến B, từ B đến C, từ C đến D, từ D đến A, từ A đến C, từ C đến A. Hãy tìm chu trình có hướng đi qua mỗi cạnh đúng một lần và quay về đỉnh ban đầu.
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_cycle
+
+---
+
+## 3. Đường đi Hamilton
+
+### Câu 3.1 - Đường đi Hamilton
+Cho một đồ thị vô hướng với các đỉnh A, B, C, D, E. Đồ thị có các cạnh: A nối B, A nối E, B nối C, B nối E, C nối D, C nối E, D nối E. Hãy tìm đường đi qua tất cả các đỉnh đúng một lần.
+
+**Metadata:** 
+- algorithm: hamilton
+- task: hamilton_path
+
+### Câu 3.2 - Đường đi Hamilton phức tạp
+Cho một đồ thị vô hướng gồm 6 đỉnh: 1, 2, 3, 4, 5, 6. Các cạnh của đồ thị là: đỉnh 1 nối đỉnh 2, đỉnh 1 nối đỉnh 6, đỉnh 2 nối đỉnh 3, đỉnh 2 nối đỉnh 6, đỉnh 3 nối đỉnh 4, đỉnh 3 nối đỉnh 5, đỉnh 4 nối đỉnh 5, đỉnh 5 nối đỉnh 6. Hãy tìm đường đi qua mỗi đỉnh đúng một lần.
+
+**Metadata:** 
+- algorithm: hamilton
+- task: hamilton_path
+
+---
+
+## 4. Đường đi ngắn nhất
+
+### Câu 4.1 - Dijkstra trên đồ thị vô hướng
+Cho một đồ thị vô hướng có trọng số với các đỉnh A, B, C, D, E. Các cạnh có trọng số như sau: A nối B có trọng số 4, A nối C có trọng số 2, B nối C có trọng số 1, B nối D có trọng số 5, C nối D có trọng số 8, C nối E có trọng số 10, D nối E có trọng số 2. Hãy tìm đường đi ngắn nhất từ đỉnh A đến tất cả các đỉnh khác.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+### Câu 4.2 - Dijkstra trên đồ thị có hướng
+Cho một đồ thị có hướng có trọng số với 5 đỉnh: 1, 2, 3, 4, 5. Các cạnh có hướng và trọng số gồm: từ 1 đến 2 có trọng số 3, từ 1 đến 3 có trọng số 8, từ 2 đến 3 có trọng số 2, từ 2 đến 4 có trọng số 1, từ 3 đến 5 có trọng số 3, từ 4 đến 5 có trọng số 2. Hãy tìm đường đi ngắn nhất từ đỉnh 1 đến các đỉnh còn lại.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+### Câu 4.3 - Bellman-Ford với trọng số âm
+Cho một đồ thị có hướng có trọng số với các đỉnh A, B, C, D, E. Các cạnh có hướng và trọng số là: từ A đến B trọng số 6, từ A đến C trọng số 7, từ B đến C trọng số -3, từ B đến D trọng số 8, từ C đến D trọng số 2, từ D đến E trọng số -2, từ E đến B trọng số 4. Hãy tìm đường đi ngắn nhất từ đỉnh A đến tất cả các đỉnh khác.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+### Câu 4.4 - Bellman-Ford trên đồ thị vô hướng
+Cho một đồ thị vô hướng có trọng số với 6 đỉnh: 1, 2, 3, 4, 5, 6. Các cạnh và trọng số gồm: đỉnh 1 nối đỉnh 2 trọng số 7, đỉnh 1 nối đỉnh 3 trọng số 9, đỉnh 2 nối đỉnh 3 trọng số 10, đỉnh 2 nối đỉnh 4 trọng số 15, đỉnh 3 nối đỉnh 4 trọng số 11, đỉnh 3 nối đỉnh 6 trọng số 2, đỉnh 4 nối đỉnh 5 trọng số 6, đỉnh 5 nối đỉnh 6 trọng số 9. Hãy tìm đường đi ngắn nhất từ đỉnh 1 đến các đỉnh còn lại.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+---
+
+## 5. Cây khung tối tiểu
+
+### Câu 5.1 - Prim
+Cho một đồ thị vô hướng có trọng số với các đỉnh A, B, C, D, E, F. Các cạnh và trọng số của đồ thị là: A nối B trọng số 2, A nối C trọng số 3, B nối C trọng số 1, B nối D trọng số 4, C nối D trọng số 5, C nối E trọng số 6, D nối E trọng số 7, D nối F trọng số 8, E nối F trọng số 9. Hãy tìm cây khung có tổng trọng số nhỏ nhất.
+
+**Metadata:** 
+- algorithm: prim
+- task: minimum_spanning_tree
+
+### Câu 5.2 - Kruskal
+Cho một đồ thị vô hướng có trọng số gồm 6 đỉnh: 1, 2, 3, 4, 5, 6. Các cạnh có trọng số như sau: đỉnh 1 nối đỉnh 2 trọng số 5, đỉnh 1 nối đỉnh 3 trọng số 10, đỉnh 2 nối đỉnh 3 trọng số 6, đỉnh 2 nối đỉnh 4 trọng số 7, đỉnh 3 nối đỉnh 4 trọng số 8, đỉnh 3 nối đỉnh 5 trọng số 9, đỉnh 4 nối đỉnh 5 trọng số 11, đỉnh 4 nối đỉnh 6 trọng số 12, đỉnh 5 nối đỉnh 6 trọng số 13. Hãy tìm cây khung có tổng trọng số các cạnh nhỏ nhất.
+
+**Metadata:** 
+- algorithm: kruskal
+- task: minimum_spanning_tree
+
+### Câu 5.3 - Prim với đồ thị lớn hơn
+Cho một đồ thị vô hướng có trọng số với 7 đỉnh A, B, C, D, E, F, G. Các cạnh có trọng số gồm: A nối B trọng số 7, A nối D trọng số 5, B nối C trọng số 8, B nối D trọng số 9, B nối E trọng số 7, C nối E trọng số 5, D nối E trọng số 15, D nối F trọng số 6, E nối F trọng số 8, E nối G trọng số 9, F nối G trọng số 11. Hãy tìm cây khung có tổng trọng số nhỏ nhất bắt đầu từ đỉnh A.
+
+**Metadata:** 
+- algorithm: prim
+- task: minimum_spanning_tree
+
+### Câu 5.4 - Kruskal với đồ thị phức tạp
+Cho một đồ thị vô hướng có trọng số với 8 đỉnh: 1, 2, 3, 4, 5, 6, 7, 8. Đồ thị có các cạnh và trọng số: đỉnh 1 nối đỉnh 2 trọng số 3, đỉnh 1 nối đỉnh 3 trọng số 4, đỉnh 2 nối đỉnh 3 trọng số 5, đỉnh 2 nối đỉnh 4 trọng số 6, đỉnh 3 nối đỉnh 4 trọng số 7, đỉnh 3 nối đỉnh 5 trọng số 8, đỉnh 4 nối đỉnh 5 trọng số 9, đỉnh 4 nối đỉnh 6 trọng số 10, đỉnh 5 nối đỉnh 6 trọng số 11, đỉnh 5 nối đỉnh 7 trọng số 12, đỉnh 6 nối đỉnh 7 trọng số 13, đỉnh 6 nối đỉnh 8 trọng số 14, đỉnh 7 nối đỉnh 8 trọng số 15. Hãy tìm cây khung có tổng trọng số các cạnh là nhỏ nhất.
+
+**Metadata:** 
+- algorithm: kruskal
+- task: minimum_spanning_tree
+# Bộ câu hỏi Lý thuyết Đồ thị - Nâng cao
+
+## 1. Duyệt đồ thị (Graph Traversal)
+
+### Câu 1.1 - BFS trên đồ thị vô hướng
+Trong một mạng lưới giao thông gồm 8 điểm giao nhau được đánh số từ A đến H. Các con đường hai chiều nối liền các điểm như sau: từ A có đường đi đến B và C; từ B có đường đi đến A, D và E; từ C có đường đi đến A, F; từ D có đường đi đến B và G; từ E có đường đi đến B, F và H; từ F có đường đi đến C, E và G; từ G có đường đi đến D, F và H; từ H có đường đi đến E và G. Một người xuất phát từ điểm A muốn khám phá toàn bộ mạng lưới theo phương pháp ưu tiên khám phá các điểm gần nhất trước. Hãy xác định thứ tự khám phá các điểm.
+
+**Metadata:** 
+- algorithm: bfs
+- task: graph_traversal
+
+### Câu 1.2 - DFS trên đồ thị vô hướng
+Một mê cung có 9 phòng được đánh số từ 1 đến 9. Các cửa nối giữa các phòng (có thể đi qua theo cả hai hướng) như sau: phòng 1 có cửa thông với phòng 2 và phòng 3; phòng 2 có cửa thông với phòng 1, phòng 4 và phòng 5; phòng 3 có cửa thông với phòng 1 và phòng 6; phòng 4 có cửa thông với phòng 2 và phòng 7; phòng 5 có cửa thông với phòng 2, phòng 6 và phòng 8; phòng 6 có cửa thông với phòng 3, phòng 5 và phòng 9; phòng 7 có cửa thông với phòng 4 và phòng 8; phòng 8 có cửa thông với phòng 5, phòng 7 và phòng 9; phòng 9 có cửa thông với phòng 6 và phòng 8. Một người bắt đầu từ phòng 1 và khám phá mê cung theo nguyên tắc đi sâu vào một hướng cho đến khi không thể đi tiếp. Hãy tìm thứ tự các phòng được khám phá.
+
+**Metadata:** 
+- algorithm: dfs
+- task: graph_traversal
+
+### Câu 1.3 - BFS trên đồ thị có hướng
+Trong một hệ thống điều khiển tự động gồm 7 trạng thái được ký hiệu S1, S2, S3, S4, S5, S6, S7. Các chuyển đổi trạng thái một chiều được định nghĩa như sau: từ S1 có thể chuyển sang S2 hoặc S3; từ S2 có thể chuyển sang S4; từ S3 có thể chuyển sang S2, S5 hoặc S6; từ S4 có thể chuyển sang S7; từ S5 có thể chuyển sang S4; từ S6 có thể chuyển sang S7; từ S7 không thể chuyển đi đâu nữa. Hệ thống bắt đầu từ trạng thái S1 và khám phá các trạng thái có thể đạt được theo nguyên tắc ưu tiên các trạng thái gần nhất. Hãy xác định trình tự khám phá.
+
+**Metadata:** 
+- algorithm: bfs
+- task: graph_traversal
+
+### Câu 1.4 - DFS trên đồ thị có hướng
+Một quy trình làm việc gồm 6 công đoạn được đánh số từ T1 đến T6. Các công đoạn có thứ tự ràng buộc một chiều như sau: công đoạn T1 phải hoàn thành trước T2 và T3; công đoạn T2 phải hoàn thành trước T4 và T5; công đoạn T3 phải hoàn thành trước T4 và T6; công đoạn T4 phải hoàn thành trước T6; công đoạn T5 không ràng buộc công đoạn nào khác; công đoạn T6 không ràng buộc công đoạn nào khác. Bắt đầu từ công đoạn T1, hãy xác định thứ tự phân tích các công đoạn theo phương pháp đi sâu.
+
+**Metadata:** 
+- algorithm: dfs
+- task: graph_traversal
+
+---
+
+## 2. Chu trình Euler
+
+### Câu 2.1 - Chu trình Euler trên đồ thị vô hướng
+Một bảo tàng nghệ thuật có 6 phòng trưng bày A, B, C, D, E, F. Các cửa nối giữa các phòng (có thể đi qua cả hai chiều) như sau: giữa A và B có một cửa, giữa A và F có một cửa, giữa B và C có một cửa, giữa B và F có một cửa, giữa C và D có một cửa, giữa C và E có một cửa, giữa D và E có một cửa, giữa D và F có một cửa, giữa E và F có một cửa. Một người bảo vệ muốn kiểm tra tất cả các cửa đúng một lần rồi quay về vị trí xuất phát. Hãy tìm lộ trình di chuyển thỏa mãn yêu cầu này.
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_cycle
+
+### Câu 2.2 - Đường đi Euler trên đồ thị vô hướng
+Một thành phố nhỏ có 7 ngã tư được đánh số từ 1 đến 7. Các con phố hai chiều nối các ngã tư như sau: ngã tư 1 nối với ngã tư 2, ngã tư 1 nối với ngã tư 3, ngã tư 2 nối với ngã tư 3, ngã tư 2 nối với ngã tư 4, ngã tư 3 nối với ngã tư 5, ngã tư 4 nối với ngã tư 5, ngã tư 4 nối với ngã tư 6, ngã tư 4 nối với ngã tư 7, ngã tư 5 nối với ngã tư 7, ngã tư 6 nối với ngã tư 7. Một người muốn đi qua tất cả các con phố đúng một lần. Hãy tìm lộ trình phù hợp.
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_path
+
+### Câu 2.3 - Chu trình Euler trên đồ thị có hướng
+Một hệ thống băng chuyền tự động gồm 5 điểm chuyển hàng P1, P2, P3, P4, P5. Các băng chuyền một chiều nối các điểm như sau: từ P1 đến P2, từ P2 đến P3, từ P2 đến P4, từ P3 đến P1, từ P3 đến P5, từ P4 đến P3, từ P5 đến P1, từ P5 đến P4. Cần kiểm tra tất cả các băng chuyền đúng một lần và quay về điểm ban đầu. Hãy tìm chu trình kiểm tra phù hợp.
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_cycle
+
+---
+
+## 3. Đường đi Hamilton
+
+### Câu 3.1 - Đường đi Hamilton
+Một công ty logistics cần vận chuyển hàng qua 8 kho hàng được ký hiệu K1, K2, K3, K4, K5, K6, K7, K8. Các tuyến đường hai chiều giữa các kho như sau: K1 kết nối với K2 và K8; K2 kết nối với K1, K3 và K4; K3 kết nối với K2 và K4; K4 kết nối với K2, K3, K5 và K6; K5 kết nối với K4 và K6; K6 kết nối với K4, K5, K7 và K8; K7 kết nối với K6 và K8; K8 kết nối với K1, K6 và K7. Cần tìm lộ trình đi qua tất cả các kho đúng một lần mà không cần quay về kho xuất phát.
+
+**Metadata:** 
+- algorithm: hamilton
+- task: hamilton_path
+
+### Câu 3.2 - Đường đi Hamilton phức tạp
+Một tour du lịch cần ghé thăm 10 địa điểm A, B, C, D, E, F, G, H, I, J. Các tuyến đường trực tiếp hai chiều giữa các địa điểm là: A kết nối B và J; B kết nối A, C, D; C kết nối B, D, E; D kết nối B, C, F; E kết nối C, F, G; F kết nối D, E, H; G kết nối E, H, I; H kết nối F, G, I, J; I kết nối G, H, J; J kết nối A, H, I. Hãy tìm hành trình đi qua mỗi địa điểm đúng một lần.
+
+**Metadata:** 
+- algorithm: hamilton
+- task: hamilton_path
+
+---
+
+## 4. Đường đi ngắn nhất
+
+### Câu 4.1 - Dijkstra cơ bản nhưng lắt léo
+Một mạng lưới giao thông gồm 7 thành phố M1, M2, M3, M4, M5, M6, M7. Các tuyến đường hai chiều và khoảng cách (km) như sau: M1 đến M2 dài 5km, M1 đến M3 dài 3km, M2 đến M3 dài 2km (chú ý: có thể đi M1→M2 rồi M2→M3 ngắn hơn đi thẳng M1→M3), M2 đến M4 dài 6km, M3 đến M4 dài 7km, M3 đến M5 dài 4km, M4 đến M5 dài 1km, M4 đến M6 dài 8km, M5 đến M6 dài 3km, M5 đến M7 dài 9km, M6 đến M7 dài 2km. Xuất phát từ M1, hãy tìm đường đi ngắn nhất đến tất cả các thành phố khác.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+### Câu 4.2 - Dijkstra với nhiều đường đi có độ dài tương đương
+Một hệ thống máy chủ gồm 6 node N1, N2, N3, N4, N5, N6. Độ trễ kết nối một chiều (millisecond) giữa các node như sau: từ N1 đến N2 mất 4ms, từ N1 đến N3 mất 8ms, từ N2 đến N3 mất 4ms (chú ý: N1→N2→N3 cũng mất 8ms như đường thẳng N1→N3), từ N2 đến N4 mất 3ms, từ N3 đến N4 mất 2ms, từ N3 đến N5 mất 5ms, từ N4 đến N5 mất 6ms, từ N4 đến N6 mất 7ms, từ N5 đến N6 mất 3ms. Bắt đầu từ N1, tìm đường truyền có độ trễ thấp nhất đến các node còn lại.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+### Câu 4.3 - Dijkstra với bẫy đường đi
+Một robot di chuyển trong nhà máy qua 8 vị trí V1, V2, V3, V4, V5, V6, V7, V8. Chi phí năng lượng di chuyển hai chiều như sau: V1 đến V2 tốn 10 đơn vị, V1 đến V3 tốn 15 đơn vị (coi chừng: đường này tuy ngắn nhưng tốn nhiều năng lượng), V2 đến V3 tốn 3 đơn vị, V2 đến V4 tốn 12 đơn vị, V3 đến V4 tốn 4 đơn vị, V3 đến V5 tốn 8 đơn vị, V4 đến V6 tốn 5 đơn vị, V5 đến V6 tốn 10 đơn vị, V5 đến V7 tốn 6 đơn vị, V6 đến V7 tốn 2 đơn vị, V6 đến V8 tốn 7 đơn vị, V7 đến V8 tốn 4 đơn vị. Từ V1, hãy tìm đường đi tiết kiệm năng lượng nhất đến các vị trí còn lại.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+### Câu 4.4 - Bellman-Ford với trọng số âm đơn giản
+Một hệ thống thanh toán điện tử gồm 6 ví W1, W2, W3, W4, W5, W6. Chi phí giao dịch chuyển tiền một chiều như sau (số âm nghĩa là được hoàn tiền): từ W1 đến W2 mất phí 8, từ W1 đến W3 mất phí 10, từ W2 đến W3 được hoàn 3 (tức là -3, có thể tận dụng để giảm chi phí tổng), từ W2 đến W4 mất phí 5, từ W3 đến W4 mất phí 2, từ W3 đến W5 mất phí 7, từ W4 đến W5 được hoàn 2, từ W4 đến W6 mất phí 6, từ W5 đến W6 mất phí 3. Từ W1, tìm cách chuyển tiền với tổng chi phí thấp nhất đến các ví khác.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+### Câu 4.5 - Bellman-Ford với nhiều trọng số âm
+Một mạng lưới kinh doanh hối đoái gồm 7 điểm giao dịch D1, D2, D3, D4, D5, D6, D7. Lợi nhuận/chi phí khi chuyển đổi tiền tệ một chiều (số dương là chi phí, số âm là lợi nhuận): từ D1 đến D2 lãi 5, từ D1 đến D3 lỗ 12, từ D2 đến D3 lãi 4 (chú ý: D1→D2→D3 cho lợi nhuận dương), từ D2 đến D4 lỗ 7, từ D3 đến D4 lỗ 3, từ D3 đến D5 lãi 6, từ D4 đến D5 lãi 3, từ D4 đến D6 lỗ 9, từ D5 đến D6 lãi 2, từ D5 đến D7 lỗ 8, từ D6 đến D7 lỗ 4, từ D6 đến D2 lãi 5 (có chu trình có thể khai thác). Từ D1, tìm đường đi có tổng chi phí thấp nhất (hoặc lợi nhuận cao nhất) đến các điểm khác.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+### Câu 4.6 - Bellman-Ford phức tạp với cả trọng số âm và dương
+Một hệ thống phân phối năng lượng gồm 9 trạm E1, E2, E3, E4, E5, E6, E7, E8, E9. Chi phí vận chuyển năng lượng một chiều (số âm là thu lợi từ việc bán thặng dư năng lượng): E1 đến E2 tốn 7, E1 đến E3 lãi 3, E2 đến E3 tốn 2, E2 đến E4 tốn 10, E3 đến E4 lãi 4 (cẩn thận: E1→E3→E4 có thể tốt hơn), E3 đến E5 tốn 6, E4 đến E5 lãi 2, E4 đến E6 tốn 8, E5 đến E6 tốn 5, E5 đến E7 lãi 5, E6 đến E7 tốn 3, E6 đến E8 lãi 6, E7 đến E8 tốn 4, E7 đến E9 tốn 7, E8 đến E9 lãi 3, E8 đến E2 lãi 4 (có chu trình âm tiềm ẩn). Từ E1, tìm đường vận chuyển với chi phí tối thiểu đến tất cả các trạm.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+### Câu 4.7 - Dijkstra với đường đi có nhiều bước
+Một mạng đường sắt cao tốc kết nối 10 ga tàu S1, S2, S3, S4, S5, S6, S7, S8, S9, S10. Thời gian di chuyển hai chiều (phút) giữa các ga: S1-S2: 15, S1-S4: 35, S2-S3: 12, S2-S5: 20, S3-S4: 8, S3-S6: 25, S4-S5: 10, S4-S7: 30, S5-S6: 14, S5-S8: 22, S6-S7: 11, S6-S9: 28, S7-S8: 16, S7-S10: 33, S8-S9: 9, S9-S10: 18. Lưu ý: đường đi qua nhiều ga có thể nhanh hơn đi thẳng (ví dụ S1→S2→S3→S4 có thể nhanh hơn S1→S4). Từ S1, tìm đường đi nhanh nhất đến tất cả các ga.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+### Câu 4.8 - Bellman-Ford với chu trình âm tinh vi
+Một hệ thống trao đổi tín dụng giữa các ngân hàng B1, B2, B3, B4, B5, B6, B7, B8. Lãi suất chuyển đổi một chiều (%) (số âm là lãi, số dương là phí): B1→B2: -2%, B1→B3: 5%, B2→B3: -1%, B2→B4: 3%, B3→B4: -3%, B3→B5: 4%, B4→B5: -2%, B4→B6: 6%, B5→B6: -1%, B5→B7: 5%, B6→B7: -3%, B6→B8: 7%, B7→B8: -2%, B7→B1: -1% (chú ý chu trình B1→B2→B3→B4→B5→B6→B7→B1), B8→B5: -4%. Từ B1, tìm cách chuyển đổi với chi phí thấp nhất đến các ngân hàng khác.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+---
+
+## 5. Cây khung tối tiểu
+
+### Câu 5.1 - Prim với nhiều lựa chọn
+Một công ty viễn thông cần kết nối 9 văn phòng O1, O2, O3, O4, O5, O6, O7, O8, O9. Chi phí lắp đặt đường truyền hai chiều (triệu đồng): O1-O2: 12, O1-O3: 15, O1-O4: 18, O2-O3: 10, O2-O5: 14, O3-O4: 11, O3-O5: 16, O3-O6: 13, O4-O6: 17, O4-O7: 20, O5-O6: 9, O5-O8: 19, O6-O7: 12, O6-O8: 15, O6-O9: 21, O7-O9: 14, O8-O9: 11. Hãy tìm phương án kết nối tất cả văn phòng với tổng chi phí thấp nhất.
+
+**Metadata:** 
+- algorithm: prim
+- task: minimum_spanning_tree
+
+### Câu 5.2 - Kruskal với trọng số gần bằng nhau
+Một mạng lưới ống nước cần kết nối 10 khu vực Z1, Z2, Z3, Z4, Z5, Z6, Z7, Z8, Z9, Z10. Độ dài ống nối hai chiều (mét): Z1-Z2: 25, Z1-Z3: 28, Z1-Z4: 26, Z2-Z3: 23, Z2-Z5: 30, Z3-Z4: 24, Z3-Z5: 27, Z3-Z6: 29, Z4-Z6: 22, Z4-Z7: 31, Z5-Z6: 21, Z5-Z8: 26, Z6-Z7: 25, Z6-Z8: 28, Z6-Z9: 32, Z7-Z9: 24, Z7-Z10: 27, Z8-Z9: 23, Z9-Z10: 20. Tìm cách bố trí ống nước sao cho tổng độ dài là nhỏ nhất mà vẫn kết nối tất cả các khu vực.
+
+**Metadata:** 
+- algorithm: kruskal
+- task: minimum_spanning_tree
+
+### Câu 5.3 - Prim trên đồ thị dày đặc
+Một hệ thống cáp điện cần nối 12 trụ điện P1 đến P12. Khoảng cách giữa các trụ (có thể kéo cáp hai chiều, tính bằng mét): P1-P2: 45, P1-P3: 52, P1-P4: 48, P1-P5: 60, P2-P3: 38, P2-P4: 55, P2-P6: 42, P3-P4: 40, P3-P5: 50, P3-P7: 58, P4-P6: 47, P4-P7: 43, P4-P8: 62, P5-P7: 51, P5-P9: 56, P6-P8: 39, P6-P10: 49, P7-P8: 44, P7-P9: 53, P7-P11: 61, P8-P10: 41, P8-P11: 57, P9-P11: 46, P9-P12: 54, P10-P11: 48, P10-P12: 50, P11-P12: 37. Bắt đầu từ P1, tìm cách kéo cáp nối tất cả các trụ với tổng chiều dài ngắn nhất.
+
+**Metadata:** 
+- algorithm: prim
+- task: minimum_spanning_tree
+
+### Câu 5.4 - Kruskal với nhiều cạnh có trọng số bằng nhau
+Một khu đô thị cần xây đường nối 11 khu phố Q1 đến Q11. Chi phí xây dựng đường hai chiều (tỷ đồng): Q1-Q2: 3.5, Q1-Q3: 3.8, Q1-Q4: 3.5, Q2-Q3: 3.2, Q2-Q5: 3.5, Q2-Q6: 4.1, Q3-Q4: 3.6, Q3-Q5: 3.5, Q3-Q7: 3.9, Q4-Q7: 3.3, Q4-Q8: 3.5, Q5-Q6: 3.4, Q5-Q7: 3.5, Q5-Q9: 4.2, Q6-Q9: 3.7, Q6-Q10: 3.5, Q7-Q8: 3.5, Q7-Q9: 3.8, Q7-Q11: 4.0, Q8-Q11: 3.1, Q9-Q10: 3.5, Q9-Q11: 3.6, Q10-Q11: 3.5. Lưu ý có nhiều cạnh cùng chi phí 3.5 tỷ. Hãy tìm phương án xây dựng với tổng chi phí thấp nhất.
+
+**Metadata:** 
+- algorithm: kruskal
+- task: minimum_spanning_tree
+# Bộ 8 câu hỏi đại diện cho 8 thuật toán
+
+## Câu 1 - BFS (Breadth-First Search)
+Trong một mạng lưới giao thông gồm 8 điểm giao nhau được đánh số từ A đến H. Các con đường hai chiều nối liền các điểm như sau: từ A có đường đi đến B và C; từ B có đường đi đến A, D và E; từ C có đường đi đến A, F; từ D có đường đi đến B và G; từ E có đường đi đến B, F và H; từ F có đường đi đến C, E và G; từ G có đường đi đến D, F và H; từ H có đường đi đến E và G. Một người xuất phát từ điểm A muốn khám phá toàn bộ mạng lưới theo phương pháp ưu tiên khám phá các điểm gần nhất trước. Hãy xác định thứ tự khám phá các điểm.
+
+**Metadata:** 
+- algorithm: bfs
+- task: graph_traversal
+
+---
+
+## Câu 2 - DFS (Depth-First Search)
+Một mê cung có 9 phòng được đánh số từ 1 đến 9. Các cửa nối giữa các phòng (có thể đi qua theo cả hai hướng) như sau: phòng 1 có cửa thông với phòng 2 và phòng 3; phòng 2 có cửa thông với phòng 1, phòng 4 và phòng 5; phòng 3 có cửa thông với phòng 1 và phòng 6; phòng 4 có cửa thông với phòng 2 và phòng 7; phòng 5 có cửa thông với phòng 2, phòng 6 và phòng 8; phòng 6 có cửa thông với phòng 3, phòng 5 và phòng 9; phòng 7 có cửa thông với phòng 4 và phòng 8; phòng 8 có cửa thông với phòng 5, phòng 7 và phòng 9; phòng 9 có cửa thông với phòng 6 và phòng 8. Một người bắt đầu từ phòng 1 và khám phá mê cung theo nguyên tắc đi sâu vào một hướng cho đến khi không thể đi tiếp. Hãy tìm thứ tự các phòng được khám phá.
+
+**Metadata:** 
+- algorithm: dfs
+- task: graph_traversal
+
+---
+
+## Câu 3 - Euler Cycle
+Một bảo tàng nghệ thuật có 6 phòng trưng bày A, B, C, D, E, F. Các cửa nối giữa các phòng (có thể đi qua cả hai chiều) như sau: giữa A và B có một cửa, giữa A và F có một cửa, giữa B và C có một cửa, giữa B và F có một cửa, giữa C và D có một cửa, giữa C và E có một cửa, giữa D và E có một cửa, giữa D và F có một cửa, giữa E và F có một cửa. Một người bảo vệ muốn kiểm tra tất cả các cửa đúng một lần rồi quay về vị trí xuất phát. Hãy tìm lộ trình di chuyển thỏa mãn yêu cầu này.
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_cycle
+
+---
+
+## Câu 4 - Euler Path
+Một thành phố nhỏ có 7 ngã tư được đánh số từ 1 đến 7. Các con phố hai chiều nối các ngã tư như sau: ngã tư 1 nối với ngã tư 2, ngã tư 1 nối với ngã tư 3, ngã tư 2 nối với ngã tư 3, ngã tư 2 nối với ngã tư 4, ngã tư 3 nối với ngã tư 5, ngã tư 4 nối với ngã tư 5, ngã tư 4 nối với ngã tư 6, ngã tư 4 nối với ngã tư 7, ngã tư 5 nối với ngã tư 7, ngã tư 6 nối với ngã tư 7. Một người muốn đi qua tất cả các con phố đúng một lần. Hãy tìm lộ trình phù hợp.
+
+**Metadata:** 
+- algorithm: euler
+- task: euler_path
+
+---
+
+## Câu 5 - Hamilton Path
+Một công ty logistics cần vận chuyển hàng qua 8 kho hàng được ký hiệu K1, K2, K3, K4, K5, K6, K7, K8. Các tuyến đường hai chiều giữa các kho như sau: K1 kết nối với K2 và K8; K2 kết nối với K1, K3 và K4; K3 kết nối với K2 và K4; K4 kết nối với K2, K3, K5 và K6; K5 kết nối với K4 và K6; K6 kết nối với K4, K5, K7 và K8; K7 kết nối với K6 và K8; K8 kết nối với K1, K6 và K7. Cần tìm lộ trình đi qua tất cả các kho đúng một lần mà không cần quay về kho xuất phát.
+
+**Metadata:** 
+- algorithm: hamilton
+- task: hamilton_path
+
+---
+
+## Câu 6 - Dijkstra
+Một robot di chuyển trong nhà máy qua 8 vị trí V1, V2, V3, V4, V5, V6, V7, V8. Chi phí năng lượng di chuyển hai chiều như sau: V1 đến V2 tốn 10 đơn vị, V1 đến V3 tốn 15 đơn vị (coi chừng: đường này tuy ngắn nhưng tốn nhiều năng lượng), V2 đến V3 tốn 3 đơn vị, V2 đến V4 tốn 12 đơn vị, V3 đến V4 tốn 4 đơn vị, V3 đến V5 tốn 8 đơn vị, V4 đến V6 tốn 5 đơn vị, V5 đến V6 tốn 10 đơn vị, V5 đến V7 tốn 6 đơn vị, V6 đến V7 tốn 2 đơn vị, V6 đến V8 tốn 7 đơn vị, V7 đến V8 tốn 4 đơn vị. Từ V1, hãy tìm đường đi tiết kiệm năng lượng nhất đến các vị trí còn lại.
+
+**Metadata:** 
+- algorithm: dijkstra
+- task: shortest_path
+
+---
+
+## Câu 7 - Bellman-Ford
+Một hệ thống phân phối năng lượng gồm 9 trạm E1, E2, E3, E4, E5, E6, E7, E8, E9. Chi phí vận chuyển năng lượng một chiều (số âm là thu lợi từ việc bán thặng dư năng lượng): E1 đến E2 tốn 7, E1 đến E3 lãi 3, E2 đến E3 tốn 2, E2 đến E4 tốn 10, E3 đến E4 lãi 4 (cẩn thận: E1→E3→E4 có thể tốt hơn), E3 đến E5 tốn 6, E4 đến E5 lãi 2, E4 đến E6 tốn 8, E5 đến E6 tốn 5, E5 đến E7 lãi 5, E6 đến E7 tốn 3, E6 đến E8 lãi 6, E7 đến E8 tốn 4, E7 đến E9 tốn 7, E8 đến E9 lãi 3, E8 đến E2 lãi 4 (có chu trình âm tiềm ẩn). Từ E1, tìm đường vận chuyển với chi phí tối thiểu đến tất cả các trạm.
+
+**Metadata:** 
+- algorithm: bellman_ford
+- task: shortest_path
+
+---
+
+## Câu 8 - Prim
+Một công ty viễn thông cần kết nối 9 văn phòng O1, O2, O3, O4, O5, O6, O7, O8, O9. Chi phí lắp đặt đường truyền hai chiều (triệu đồng): O1-O2: 12, O1-O3: 15, O1-O4: 18, O2-O3: 10, O2-O5: 14, O3-O4: 11, O3-O5: 16, O3-O6: 13, O4-O6: 17, O4-O7: 20, O5-O6: 9, O5-O8: 19, O6-O7: 12, O6-O8: 15, O6-O9: 21, O7-O9: 14, O8-O9: 11. Hãy tìm phương án kết nối tất cả văn phòng với tổng chi phí thấp nhất.
+
+**Metadata:** 
+- algorithm: prim
+- task: minimum_spanning_tree
+
+---
+
+## Câu 9 - Kruskal
+Một khu đô thị cần xây đường nối 11 khu phố Q1 đến Q11. Chi phí xây dựng đường hai chiều (tỷ đồng): Q1-Q2: 3.5, Q1-Q3: 3.8, Q1-Q4: 3.5, Q2-Q3: 3.2, Q2-Q5: 3.5, Q2-Q6: 4.1, Q3-Q4: 3.6, Q3-Q5: 3.5, Q3-Q7: 3.9, Q4-Q7: 3.3, Q4-Q8: 3.5, Q5-Q6: 3.4, Q5-Q7: 3.5, Q5-Q9: 4.2, Q6-Q9: 3.7, Q6-Q10: 3.5, Q7-Q8: 3.5, Q7-Q9: 3.8, Q7-Q11: 4.0, Q8-Q11: 3.1, Q9-Q10: 3.5, Q9-Q11: 3.6, Q10-Q11: 3.5. Lưu ý có nhiều cạnh cùng chi phí 3.5 tỷ. Hãy tìm phương án xây dựng với tổng chi phí thấp nhất.
+
+**Metadata:** 
+- algorithm: kruskal
+- task: minimum_spanning_tree
+
